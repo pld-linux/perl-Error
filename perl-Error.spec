@@ -24,7 +24,7 @@ Modu³ perla Error - obiektowa obs³uga b³êdów/wyj±tków.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
