@@ -7,7 +7,7 @@ Summary:	Error - error/exception handling in an OO-ish way
 Summary(pl):	Error - obiektowa obs³uga b³êdów/wyj±tków
 Name:		perl-Error
 Version:	0.15
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
