@@ -27,7 +27,7 @@ catch, or can simply be recorded.
 %description -l pl
 Modu³ Perla Error udostêpnia dwa interfejsy. Po pierwsze, interfejs
 proceduralny do obs³ugi wyj±tków. Po drugie, klasê bazow± dla
-b³êdów/wyj±tków, które mog± byæ albo przerzucone dla po¼niejszego
+b³êdów/wyj±tków, które mog± byæ albo przerzucone dla pó¼niejszego
 przejêcia, albo po prostu zarejestrowane.
 
 - obiektowa obs³uga b³êdów/wyj±tków.
