@@ -25,7 +25,7 @@ Modu³ perla Error - obiektowa obs³uga b³êdów/wyj±tków.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
