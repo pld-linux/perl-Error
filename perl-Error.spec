@@ -22,7 +22,7 @@ Modu³ perla Error - obiektowa obs³uga b³êdów/wyj±tków.
 %setup -q -n Error-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
