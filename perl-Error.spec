@@ -3,7 +3,7 @@ Summary:	Error perl module
 Summary(pl):	Modu³ perla Error
 Name:		perl-Error
 Version:	0.15
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
