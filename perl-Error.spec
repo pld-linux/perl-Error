@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Error perl module
 Summary(pl):	Modu³ perla Error
 Name:		perl-Error
@@ -8,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Error/Error-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -17,7 +18,7 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 Error perl - Error/exception handling in an OO-ish way.
 
 %description -l pl
-Modu³ perla Error.
+Modu³ perla Error - obiektowa obs³uga b³êdów/wyj±tków.
 
 %prep
 %setup -q -n Error-%{version}
