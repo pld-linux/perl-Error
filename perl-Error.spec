@@ -1,10 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Error perl module
-Summary(pl):	Modu³ perla Error
+Summary:	Error - error/exception handling in an OO-ish way
+Summary(pl):	Error - obiektowa obs³uga b³êdów/wyj±tków
 Name:		perl-Error
 Version:	0.15
 Release:	4
-License:	GPL
+# same as perl
+License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
 # Source0-md5:	81b4847fb893f18a4e85186bca5f4380
@@ -14,10 +15,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Error perl - Error/exception handling in an OO-ish way.
+The Error Perl module provides two interfaces. Firstly Error provides
+a procedural interface to exception handling. Secondly Error is a base
+class for errors/exceptions that can either be thrown, for subsequent
+catch, or can simply be recorded.
 
 %description -l pl
-Modu³ perla Error - obiektowa obs³uga b³êdów/wyj±tków.
+Modu³ Perla Error udostêpnia dwa interfejsy. Po pierwsze, interfejs
+proceduralny do obs³ugi wyj±tków. Po drugie, klasê bazow± dla
+b³êdów/wyj±tków, które mog± byæ albo przerzucone dla po¼niejszego
+przejêcia, albo po prostu zarejestrowane.
+
+- obiektowa obs³uga b³êdów/wyj±tków.
 
 %prep
 %setup -q -n Error-%{version}
