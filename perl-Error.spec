@@ -2,8 +2,8 @@
 Summary:	Error perl module
 Summary(pl):	Modu³ perla Error
 Name:		perl-Error
-Version:	0.13
-Release:	3
+Version:	0.14
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
