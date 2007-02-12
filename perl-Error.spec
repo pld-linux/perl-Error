@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Error - error/exception handling in an OO-ish way
-Summary(pl):	Error - obiektowa obs³uga b³êdów/wyj±tków
+Summary(pl.UTF-8):   Error - obiektowa obsÅ‚uga bÅ‚Ä™dÃ³w/wyjÄ…tkÃ³w
 Name:		perl-Error
 Version:	0.15
 Release:	6
@@ -24,13 +24,13 @@ a procedural interface to exception handling. Secondly Error is a base
 class for errors/exceptions that can either be thrown, for subsequent
 catch, or can simply be recorded.
 
-%description -l pl
-Modu³ Perla Error udostêpnia dwa interfejsy. Po pierwsze, interfejs
-proceduralny do obs³ugi wyj±tków. Po drugie, klasê bazow± dla
-b³êdów/wyj±tków, które mog± byæ albo przerzucone dla pó¼niejszego
-przejêcia, albo po prostu zarejestrowane.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Error udostÄ™pnia dwa interfejsy. Po pierwsze, interfejs
+proceduralny do obsÅ‚ugi wyjÄ…tkÃ³w. Po drugie, klasÄ™ bazowÄ… dla
+bÅ‚Ä™dÃ³w/wyjÄ…tkÃ³w, ktÃ³re mogÄ… byÄ‡ albo przerzucone dla pÃ³Åºniejszego
+przejÄ™cia, albo po prostu zarejestrowane.
 
-- obiektowa obs³uga b³êdów/wyj±tków.
+- obiektowa obsÅ‚uga bÅ‚Ä™dÃ³w/wyjÄ…tkÃ³w.
 
 %prep
 %setup -q -n Error-%{version}
