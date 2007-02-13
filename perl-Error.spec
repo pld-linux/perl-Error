@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Error - error/exception handling in an OO-ish way
-Summary(pl.UTF-8):   Error - obiektowa obsługa błędów/wyjątków
+Summary(pl.UTF-8):	Error - obiektowa obsługa błędów/wyjątków
 Name:		perl-Error
 Version:	0.15
 Release:	6
