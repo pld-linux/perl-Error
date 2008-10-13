@@ -9,10 +9,11 @@ Name:		perl-Error
 Version:	0.15
 Release:	7
 # same as perl
-License:	GPL v1 or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
 # Source0-md5:	81b4847fb893f18a4e85186bca5f4380
+URL:		http://search.cpan.org/dist/Error/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
