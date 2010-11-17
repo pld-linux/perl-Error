@@ -6,13 +6,14 @@
 Summary:	Error - error/exception handling in an OO-ish way
 Summary(pl.UTF-8):	Error - obiektowa obsługa błędów/wyjątków
 Name:		perl-Error
-Version:	0.17015
-Release:	2
+Version:	0.17016
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
-# Source0-md5:	203bc410ae5040e7b647a52aa0fabafe
+#Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Error/SHLOMIF/Error-%{version}.tar.gz
+# Source0-md5:	eedcd3c6970568dd32092b5334328eff
 URL:		http://search.cpan.org/dist/Error/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -30,8 +31,6 @@ Moduł Perla Error udostępnia dwa interfejsy. Po pierwsze, interfejs
 proceduralny do obsługi wyjątków. Po drugie, klasę bazową dla
 błędów/wyjątków, które mogą być albo przerzucone dla późniejszego
 przejęcia, albo po prostu zarejestrowane.
-
-- obiektowa obsługa błędów/wyjątków.
 
 %prep
 %setup -q -n Error-%{version}
@@ -58,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Error.pm
 %dir %{perl_vendorlib}/Error
 %{perl_vendorlib}/Error/Simple.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Error*.3pm*
