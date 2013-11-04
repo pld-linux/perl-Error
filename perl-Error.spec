@@ -6,16 +6,20 @@
 Summary:	Error - error/exception handling in an OO-ish way
 Summary(pl.UTF-8):	Error - obiektowa obsługa błędów/wyjątków
 Name:		perl-Error
-Version:	0.17018
+Version:	0.17021
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 #Source0:	http://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
 Source0:	http://www.cpan.org/modules/by-module/Error/SHLOMIF/Error-%{version}.tar.gz
-# Source0-md5:	1137a7bbb94c9508a2268c467583207f
+# Source0-md5:	fd98e0041b2acbfb19c6b492243709d2
 URL:		http://search.cpan.org/dist/Error/
 BuildRequires:	perl-devel >= 1:5.8.0
+%if %{with tests}
+BuildRequires:	perl-Test-Pod >= 1.14
+BuildRequires:	perl-Test-Pod-Coverage >= 1.04
+%endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
