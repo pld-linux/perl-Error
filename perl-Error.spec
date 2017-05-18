@@ -19,6 +19,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-Test-Pod >= 1.14
 BuildRequires:	perl-Test-Pod-Coverage >= 1.04
+BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
