@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	Error - error/exception handling in an OO-ish way
 Summary(pl.UTF-8):	Error - obiektowa obsługa błędów/wyjątków
 Name:		perl-Error
