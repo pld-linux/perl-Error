@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 Summary:	Error - error/exception handling in an OO-ish way
 Summary(pl.UTF-8):	Error - obiektowa obsługa błędów/wyjątków
@@ -10,14 +10,16 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-#Source0:	https://www.cpan.org/modules/by-module/Error/Error-%{version}.tar.gz
 Source0:	https://www.cpan.org/modules/by-module/Error/SHLOMIF/Error-%{version}.tar.gz
 # Source0-md5:	abead990aa7e60d1eb2044999669f3e3
-URL:		https://search.cpan.org/dist/Error/
+URL:		https://metacpan.org/dist/Error
+BuildRequires:	perl-ExtUtils-MakeMaker
+BuildRequires:	perl-Module-Build >= 0.28
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
-BuildRequires:	perl-Test-Pod >= 1.14
-BuildRequires:	perl-Test-Pod-Coverage >= 1.04
+BuildRequires:	perl-Test-Pod >= 1.41
+BuildRequires:	perl-Test-Pod-Coverage >= 1.08
+BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -42,9 +44,12 @@ przejęcia, albo po prostu zarejestrowane.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
+
 %{__make}
 
-%{?with_tests:%{__make} test}
+%if %{with tests}
+%{__make} test
+%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc ChangeLog Changes README
 %{perl_vendorlib}/Error.pm
 %dir %{perl_vendorlib}/Error
 %{perl_vendorlib}/Error/Simple.pm
