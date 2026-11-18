@@ -23,6 +23,7 @@ BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Scalar-List-Utils
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
